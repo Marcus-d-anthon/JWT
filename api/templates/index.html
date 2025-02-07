@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica DTO - JWT</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a mi API</h1>
+        <p>Esta API muestra el uso de un DTO (Data Transfer Object) en un CRUD básico, incluyendo
+            una autorización por medio de un JWT (Json Web Token)
+        </p>
+        <nav> 
+            <ul>
+                <li><a href="/api/v1/">Ver Api</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Operaciones Disponibles</h2>
+        <ul>
+            <li><strong>GET</strong> /api/v1/productos/ - Lista todos los productos</li>
+            <li><strong>POST</strong> /api/v1/productos/ - Crea un nuevo producto</li>
+            <li><strong>GET</strong> /api/v1/productos/{id}/ - Obtiene un producto por ID</li>
+            <li><strong>PUT</strong> /api/v1/productos/{id}/ - Actualiza un producto</li>
+            <li><strong>DELETE</strong> /api/v1/productos/{id}/ - Elimina un producto</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 API de Productos</p>
+    </footer>
+</body>
+</html>
